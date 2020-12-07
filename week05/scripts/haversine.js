@@ -52,8 +52,8 @@ elLocate.addEventListener("click",function () {
             elDepulze.innerHTML = "Distance to De Pulze, CJ is : " + distances[0];
             elSunway.innerHTML = "Distance to Sunway Pyramid is : " + distances[1];
             elKlcc.innerHTML = "Distance to KLCC is : " + distances[2];
-        })
+        });
     }else {
         alert("Geolocation is not supported")
     }
-}))
+})
