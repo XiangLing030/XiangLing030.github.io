@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
     let video = document.getElementById("myVideo");
 
     let playBtn = document.getElementById("playBtn");
@@ -7,7 +7,7 @@ window.onload = function(){
     });
 
     let pauseBtn = document.getElementById("pauseBtn");
-    pauseBtn.addEventListener("click",function(){
+    pauseBtn.addEventListener("click",function () {
         video.pause();
     });
 };
