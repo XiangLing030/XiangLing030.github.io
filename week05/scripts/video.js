@@ -11,7 +11,7 @@ window.onload = function () {
         video.pause();
     });
 
-    let freezeBtn = document.getElementById("FreezeBtn");
+    let freezeBtn = document.getElementById("freezeBtn");
     freezeBtn.addEventListener("mousedown",function () {
         video.pause();
     });
