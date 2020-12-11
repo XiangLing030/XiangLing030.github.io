@@ -14,8 +14,7 @@ function getRandomUser (){
 
             elFirstName.innerHTML = data.results[0].name.first;
         
-
-            elJsonResult.innerHTML=this.response
+            elJsonResult.innerHTML = this.response
         }
     }
 
