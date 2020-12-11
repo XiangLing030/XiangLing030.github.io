@@ -13,10 +13,16 @@ function getRandomUser (){
             let elEmail = document.getElementById("email");
 
             elFirstName.innerHTML = data.results[0].name.first;
-            elLastName.innerHTML = data.results[0].name.last
-            elPhone.innerHTML = data.results[0].phone;
             elUserImage.src = data.results[0].picture.large;
-            elUserImage.title = date.results[0].name.first + "" + data.results[0].name.last;
+            elUserImage.title = date.results[0].name.first + " " + data.results[0].name.last;
+            elLastName.innerHTML = data.results[0].name.last;
+            elPhone.innerHTML = data.results[0].phone;
+            elAddress.innerHTML = data.results[0].location.street.number + ", " 
+                + data.results[0].location.street.name + ", <br>" 
+                + data.results[0].location.postcode + " " 
+                + data.results[0].location.city +", <br>" 
+                + data.results[0].location.country;
+            elEmail.innerHTML = data.results[0].email;
         
             elJsonResult.innerHTML = this.response
         }
