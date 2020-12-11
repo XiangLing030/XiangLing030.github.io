@@ -13,6 +13,10 @@ function getRandomUser (){
             let elEmail = document.getElementById("email");
 
             elFirstName.innerHTML = data.results[0].name.first;
+            elLastName.innerHTML = data.results[0].name.last
+            
+            elUserImage.src = data.results[0].picture.large;
+            elUserImage.title = date.results[0].name.first + "" + data result[0].name.last;
         
             elJsonResult.innerHTML = this.response
         }
