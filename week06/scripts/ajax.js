@@ -16,7 +16,7 @@ function getRandomUser (){
             elLastName.innerHTML = data.results[0].name.last
             elPhone.innerHTML = data.results[0]
             elUserImage.src = data.results[0].picture.large;
-            elUserImage.title = date.results[0].name.first + "" + data results[0].name.last;
+            elUserImage.title = date.results[0].name.first + "" + data.results[0].name.last;
         
             elJsonResult.innerHTML = this.response
         }
