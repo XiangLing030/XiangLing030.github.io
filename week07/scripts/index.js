@@ -19,4 +19,19 @@ let app3 = new Vue({
     data: {
         seen: true
     }
+});
+
+let app4 = new Vue({
+    el: "#app4",
+    data: {
+        todo: {
+            text: "Learn JavaScript"
+        },
+        {
+        text: "Learn Vue"
+    },
+    {
+        text: "Build something awesome!"
+    }
+    }
 })
