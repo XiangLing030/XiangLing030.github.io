@@ -13,7 +13,7 @@ function GetBookings() {
                 let gPax = json.bookings[i].pax;
                 let gId = json.bookings[i].id;
 
-                bookingList.innerHTML += gId + "-" + gName + ", " + gEmail + ", pax: " + pax + "<br>";
+                bookingList.innerHTML += gId + "-" + gName + ", " + gEmail + ", pax: " + gPax + "<br>";
             }
         });
 }
