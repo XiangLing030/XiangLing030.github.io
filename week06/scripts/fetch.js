@@ -8,7 +8,7 @@ function GetBookings() {
             let bookingList = document.getElementById("bookingList");
             bookingList.innerHTML = " ";
 
-            let jsonDiv = document.getElementsById("json");
+            let jsonDiv = document.getElementById("json");
             jsonDiv.innerHTML = "";
             jsonDiv.innerHTML = json.bookings;
 
