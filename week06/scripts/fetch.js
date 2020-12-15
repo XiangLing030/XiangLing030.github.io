@@ -49,7 +49,7 @@ function BookNow(guestName, guestEmail, guestPax) {
             // Do something with object
             //console.log(json.booking);
             let bookMsg = document.getElementById("bookMsg");
-            bookMsg.innerHTML = json.booking.name + "added!"
+            bookMsg.innerHTML = json.booking.name + " added!"
             GetBookings();
         });
 }
