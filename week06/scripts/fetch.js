@@ -48,17 +48,17 @@ function BookNow(guestName, guestEmail, guestPax) {
         .then(json => {
             // Do something with object
             //console.log(json.booking);
-            let bookMsg = document.getElementbyId("bookMsg");
+            let bookMsg = document.getElementById("bookMsg");
             bookMsg.innerHTML = json.booking.name + "added!"
             GetBookings();
         });
 }
 
-let bookNow = document.getElementbyId("bookNow");
+let bookNow = document.getElementById("bookNow");
 bookNow.addEventListener("click", function () {
-    let gName = document.getElementbyId("guestName").value;
-    let gEmail = document.getElementbyId("guestEmail").value;
-    let gPax = document.getElementbyId("guestPax").value;
+    let gName = document.getElementById("guestName").value;
+    let gEmail = document.getElementById("guestEmail").value;
+    let gPax = document.getElementById("guestPax").value;
 
     BookNow(gName, gEmail, gPax);
 
