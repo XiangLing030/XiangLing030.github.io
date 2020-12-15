@@ -59,4 +59,4 @@ bookNow.addEventListener("click", function () {
 
     BookNow(gName, gEmail, gPax);
 
-})
+});
