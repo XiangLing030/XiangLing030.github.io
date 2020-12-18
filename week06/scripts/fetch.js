@@ -70,7 +70,7 @@ function DeleteBooking(id) {
         method: 'DELETE',
     })
         .then((response) => {
-            document.getElementById('deletedMsg').innerHTML = "Booking Deleted!";
+            document.getElementById('deleteMsg').innerHTML = "Booking Deleted!";
             GetBookings();
         });
 }
