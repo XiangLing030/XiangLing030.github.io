@@ -69,8 +69,7 @@ function DeleteBooking(id) {
     fetch(url, {
         method: 'DELETE',
     })
-        .then((response) => response.json())
-        .then(() => {
+        .then((response) => {
             document.getElementById('deletedMsg').innerHTML = "Booking Deleted!";
             GetBookings();
         });
