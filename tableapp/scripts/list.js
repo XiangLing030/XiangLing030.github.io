@@ -17,7 +17,7 @@ function GetBookings() {
                 let buttonId = "delete" + gId;
 
                 let row = bookingList.insertRow(bookingList.rows.length);
-                row.insertCell(0), innerHTML = gId;
+                row.insertCell(0).innerHTML = gId;
                 row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
                 row.insertCell(3).innerHTML = gPax;
