@@ -1,5 +1,5 @@
 function GetBookings() {
-    let url = 'https://api.sheety.co/b064d12af8aa83176c9e735b8ead7e47/appointmentBookingApp/appointments';
+    let url = 'https://api.sheety.co/b064d12af8aa83176c9e735b8ead7e47/appointmentBookingApp/appointments/';
     fetch(url)
         .then((response) => response.json())
         .then(json => {
@@ -16,7 +16,7 @@ function GetBookings() {
             for (let i = 0; i < json.appointments.length; i++) {
                 let gName = json.appointments[i].name;
                 let gEmail = json.appointments[i].email;
-                let gPhone = json.appointments[i].phone;
+                let gPhone = json.appointments[i].phoneNumber;
                 let gDate = json.appointments[i].date;
                 let gTime = json.appointments[i].time;
                 let gId = json.appointments[i].id;
@@ -53,7 +53,7 @@ window.addEventListener("load", function () {
 })
 
 function DeleteBooking(id) {
-    let url = 'https://api.sheety.co/b064d12af8aa83176c9e735b8ead7e47/appointmentBookingApp/appointments' + id;
+    let url = 'https://api.sheety.co/b064d12af8aa83176c9e735b8ead7e47/appointmentBookingApp/appointments/' + id;
     fetch(url, {
         method: 'DELETE',
     })
